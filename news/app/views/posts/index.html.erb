@@ -1,0 +1,12 @@
+
+<%= link_to "New Post", new_post_path, class: "btn btn-default pull-right" %>
+
+<% @posts.each do |post| %>
+
+  <div class="post">
+    <%= post.username %>
+    - <%= link_to post.title, post.url %>
+    - <%= distance_of_time_in_words(Time.now, post.created_at) %> ago
+    - <%= link_to "Edit", edit_post_path(post) %>
+  </div>
+<% end %>
