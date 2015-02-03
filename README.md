@@ -4,7 +4,7 @@ Day 22: Forms and CRUD
 Quiz 1: Migrations
 -----------------
 
-Given the `schema.rb` file in the "quiz1" directory, create a Migration that
+Given the `schema.rb` file in the `pins` directory, create a Migration that
 will add a date `paid_through` to the user. In addition, it should remove the
 column `username`.
 
